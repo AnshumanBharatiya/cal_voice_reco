@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+        *{
+            margin:0;
+            padding: 0;
+            font-family: 'Roboto Mono', monospace;
+            background: no-repeat;
+        }
+        #container{
+            width:100%;
+            height: 100vh;
+            background:linear-gradient(#246685,#24855D);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #calculator{
+            width: 320px;
+            height: 520px;
+            background: linear-gradient(#AADFD2,#A3B8C0);
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 0 15px 3px rgba(0,0,0,0.5),
+                        0 0 20px 5px rgba(0,0,0,0.5);
+        }
+        #result{
+            height: 120px;
+        }
+        #history{
+            text-align: right;
+            height: 20px;
+            margin: 0 20px;
+            padding-top: 20px;
+            font-size: 18px;
+            color: #588072;
+        }
+        #output{
+            text-align: right;
+            height: 60px;
+            margin: 10px 20px;
+            font-size: 30px;
+        }
+        #keyboard{
+            height: 400px;
+        }
+        .operator,.number,.empty{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin: 15px;
+            border-radius: 50%;
+            border-width: 0;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .number,.operator{
+            cursor: pointer;
+        }
+        .operator{
+            background-color: #AFEEEE;
+        }
+        .operator:active{
+            font-size: 15px;
+             background: #AFEEEE!important;
+        }
+        .number:active{
+            font-size: 15px;
+            background: linear-gradient(#AADFD2,#A3B8C0);
+        }
+        .operator:focus,.number:focus,.empty:focus{
+            outline: 0;
+        }
+        #output-result{
+            width: 250px;
+            height: 120px;
+            float: left;
+        }
+        #mic-img{
+            height: 30px;
+            width: 30px;
+            float: right;
+            background-image: url(mic.png);
+            background-size: 100% 100%;
+            border-radius: 50%;
+            margin: 20px;
+            margin-top: 30px;
+            /*animation: animation 1.6s infinite;*/
+
+        }
+        .recording{
+            animation: animation 1.6s infinite;
+        }
+        @keyframes animation{
+            0%{
+                transform: scale(0.9);
+                /*opacity: 0;*/
+            }
+            60%{
+                transform: scale(1);
+                box-shadow: 0 0 0 10px rgba(0,150,255,0.3);
+                /*opacity: 1;*/
+            }
+            100%{
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgba(0,150,255,0.5);
+                /*opacity: 0;*/
+            }
+        }
