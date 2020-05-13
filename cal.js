@@ -104,7 +104,8 @@ function getHistory(){
                  "divide":"/",
                  "divided":"/",
                  "reminder":"%",
-                 "one":"1"}
+                 "one":"1",
+                 "ten":"10"}
     
     recognition.onresult = function(event){
         var input = event.results[0][0].transcript;
