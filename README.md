@@ -1,3 +1,2 @@
 # cal_voicereco
-see the demo
-https://anshumanbharatiya.github.io/cal_voice_reco/
+<a href="https://anshumanbharatiya.github.io/cal_voice_reco/">see live</a>
